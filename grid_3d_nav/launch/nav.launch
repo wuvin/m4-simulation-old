@@ -1,0 +1,13 @@
+<launch>
+  <node name="a_star_planner" pkg="grid_3d_nav" type="3d_astar.py">
+  </node>
+  <node name="multimodal_path_publisher" pkg="grid_3d_nav" type="mulitimodal_path_publisher.py">
+  </node>
+  <node name="nav_path_republisher" pkg="grid_3d_nav" type="nav_path_republisher.py">
+  </node>
+  <node name="path_follower" pkg="grid_3d_nav" type="simple_follower_2d.py">
+  </node>
+  <node name="flight_control_node" pkg="grid_3d_nav" type="aerial_follower.py">
+  </node>
+  
+</launch>

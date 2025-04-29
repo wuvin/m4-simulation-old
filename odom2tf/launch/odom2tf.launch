@@ -1,0 +1,12 @@
+<launch>
+
+  <arg name="odom" default="my_odom" />
+  <arg name="parent_f" default="world" />
+  <arg name="child_f" default="base_link" />
+
+  <node name="odom2tf" pkg="odom2tf" type="odom2tf.py">
+                <param name="odom_topic" value="$(arg odom)" />
+                <param name="parent_frame" value="$(arg parent_f)" />
+                <param name="child_frame" value="$(arg child_f)" />
+  </node>
+</launch>

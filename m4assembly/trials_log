@@ -1,0 +1,12 @@
+1 tried morphing and seeing if connecting ardupilot works no control ,the model tilts 
+2 tired changing p gain to see if jitter stops 
+
+3 fixed the irritation issue by changing the inertial of the blades but when takes off the joints apper not loaded and flex 
+
+4 fixed the hip joints and tries flight , works pretty good 
+
+5 made revolute joint and kept min max limit to 0 and tried flight same results that means urdf and sdf are transistioning good 
+
+6 check if in wheeled stage is my robot moving due to ardupilot plugin
+
+
